@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <table id="table">
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>No. of pages</th>
+            <th>Read</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </table>
+    <button type="button" id="newBookButton" onclick="showForm()">NEW BOOK</button>
+    <form id="form">
+        <div>
+          <label for="title">Enter book title: </label>
+          <input type="text" id="title" required>
+        </div>
+        <div>
+          <label for="author">Enter book author: </label>
+          <input type="text" id="author" required>
+        </div>
+        <div>
+            <label for="pages">Enter number of pages: </label>
+            <input type="text" id="pages" required>
+        </div>
+        <div>
+            <input type="radio" id="read" required>
+            <label for="read">Read</label>
+        </div>
+        <div>
+            <button type="button" id = "addBookButton" onclick="addBookToLibrary()">ADD</button>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
